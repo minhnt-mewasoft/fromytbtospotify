@@ -17,5 +17,5 @@ jobs:
           SPOTIFY_EMAIL: ${{ secrets.SPOTIFY_EMAIL }}
           SPOTIFY_PASSWORD: ${{ secrets.SPOTIFY_PASSWORD }}
           EPISODE_PATH: /github/workspace
-          EXTRACTOR_ARGS: "youtubetab:skip=webpage,youtube:player_skip=webpage,configs;visitor_data=${{secrets.VISITOR_DATA}}"
+          COOKIES: /github/workspace/cookies.txt
          
