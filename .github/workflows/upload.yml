@@ -17,5 +17,4 @@ jobs:
           SPOTIFY_EMAIL: ${{ secrets.SPOTIFY_EMAIL }}
           SPOTIFY_PASSWORD: ${{ secrets.SPOTIFY_PASSWORD }}
           EPISODE_PATH: /github/workspace
-          COOKIES: '/github/workspace/cookies.txt'
          
