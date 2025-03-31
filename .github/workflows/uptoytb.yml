@@ -1,4 +1,4 @@
-name: 'Upload Episode from YouTube To Spotify'
+name: 'Up To Spotify'
 
 on:
   push:
