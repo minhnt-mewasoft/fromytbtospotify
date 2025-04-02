@@ -12,8 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Pass cookie
-        run: yt-dlp --cookies cookies.txt -o "episode.mp4" "https://www.youtube.com/watch?v=shD5SWMqd0E"
+      - name: Install yt-dlp
+        run: pip install yt-dlp
+
+      - name: Check cookies file
+        run: cat cookies.txt || echo "No cookies file found!"
+        
+      - name: Download video from YouTube with cookies
+        run: yt-dlp --cookies cookies.txt -o "episode.mp4" "https://www.youtube.com/watch?v=tv_K9gG8QbQ"
         
       - name: Upload Episode from YouTube To Spotify
         uses: Schroedinger-Hat/youtube-to-spotify@v2.5.0
