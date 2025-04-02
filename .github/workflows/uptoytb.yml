@@ -16,7 +16,7 @@ jobs:
         run: pip install yt-dlp
 
       - name: Pass Cookie
-        run: yt-dlp --extractor-args "youtubetab:skip=webpage" --extractor-args "youtube:player_skip=webpage,configs;visitor_data=waI-oum5NHo"
+        run: yt-dlp --extractor-args "youtubetab:skip=webpage" --extractor-args "youtube:player_skip=webpage,configs;visitor_data=waI-oum5NHo" -o "episode.mp4" "https://www.youtube.com/watch?v=tv_K9gG8QbQ"
         
       - name: Upload Episode from YouTube To Spotify
         uses: Schroedinger-Hat/youtube-to-spotify@v2.5.0
